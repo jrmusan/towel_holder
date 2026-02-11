@@ -100,6 +100,28 @@
             border: none;
         }
 
+        .video-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .video-link:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .video-link::before {
+            content: "▶ ";
+            margin-right: 5px;
+        }
+
         .video-description {
             margin-top: 15px;
             color: #666;
@@ -147,32 +169,42 @@
                 <h2>📦 Product Overview</h2>
                 <div class="video-wrapper">
                     <iframe 
-                        src="https://www.youtube.com/embed/eJGCuLDRsq8" 
+                        src="https://www.youtube-nocookie.com/embed/eJGCuLDRsq8?rel=0" 
                         title="Rav4 Towel Holder - Product Overview"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                        referrerpolicy="strict-origin-when-cross-origin">
                     </iframe>
                 </div>
                 <p class="video-description">
                     Discover what makes this towel holder the perfect addition to your Rav4. 
                     See the features, design, and how it fits seamlessly into your vehicle.
                 </p>
+                <a href="https://www.youtube.com/watch?v=eJGCuLDRsq8" target="_blank" rel="noopener noreferrer" class="video-link">
+                    Watch on YouTube
+                </a>
             </div>
 
             <div class="video-card">
                 <h2>🔧 Installation Guide</h2>
                 <div class="video-wrapper">
                     <iframe 
-                        src="https://www.youtube.com/embed/iNOEuCTp7Po" 
+                        src="https://www.youtube-nocookie.com/embed/iNOEuCTp7Po?rel=0" 
                         title="Rav4 Towel Holder - Installation Guide"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                        referrerpolicy="strict-origin-when-cross-origin">
                     </iframe>
                 </div>
                 <p class="video-description">
                     Follow our step-by-step installation guide to easily install your towel holder. 
                     Simple, quick, and no special tools required!
                 </p>
+                <a href="https://www.youtube.com/watch?v=iNOEuCTp7Po" target="_blank" rel="noopener noreferrer" class="video-link">
+                    Watch on YouTube
+                </a>
             </div>
         </div>
 
