@@ -138,6 +138,19 @@
             font-size: 0.9em;
         }
 
+        @media (prefers-reduced-motion: reduce) {
+            .video-card,
+            .video-link {
+                transition: none;
+                transform: none;
+            }
+
+            .video-card:hover,
+            .video-link:hover {
+                transform: none;
+            }
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
