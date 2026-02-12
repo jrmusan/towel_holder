@@ -63,6 +63,64 @@
             margin: 0 auto 40px;
         }
 
+        .purchase-section {
+            text-align: center;
+            margin: 50px auto;
+            padding: 40px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            max-width: 700px;
+        }
+
+        .purchase-section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .purchase-section p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .purchase-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .buy-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 40px;
+            font-size: 1.1em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            min-width: 180px;
+            background: white;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .buy-button img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+
         .videos {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -226,6 +284,21 @@
                 <strong>Designed specifically for 2019–2026 Toyota RAV4s and 3D printed for a precise fit.</strong>
             </p>
         </header>
+
+        <section class="purchase-section">
+            <h2>🛒 Get Yours Today!</h2>
+            <p>Available now on eBay and Etsy</p>
+            <div class="purchase-buttons">
+                <a href="https://www.ebay.com/itm/117013671703" target="_blank" rel="noopener noreferrer" class="buy-button ebay">
+                    Buy on
+                    <img src="ebay.png" alt="eBay logo">
+                </a>
+                <a href="https://www.etsy.com/listing/4451569407/toyota-rav4-paper-towel-holder-custom" target="_blank" rel="noopener noreferrer" class="buy-button etsy">
+                    Buy on
+                    <img src="etsy.png" alt="Etsy logo">
+                </a>
+            </div>
+        </section>
 
         <div class="videos">
             <div class="video-card">
